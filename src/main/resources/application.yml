@@ -5,7 +5,7 @@ server:
 #application configuration
 spring:
   application:
-    name: Eureca_server
+    name: eureca_server
 
 eureka:
   client:
