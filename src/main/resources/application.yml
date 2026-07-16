@@ -13,3 +13,13 @@ eureka:
     fetch-registry: false
   server:
     wait-time-in-ms-when-sync-empty: 0
+
+# ================================
+# LOGGING
+# ================================
+logging:
+  pattern:
+    console: "%clr(%d{yyyy-MM-dd HH:mm:ss}){faint} %clr(%-5level) [request-id=%X{requestId}] [trace-id=%X{trace_id}] [%X{clientIp}] %clr([%thread]){magenta} %clr(%logger{36}){cyan} : %msg%n%wEx{5}"
+  level:
+    root: INFO
+    org.hibernate.orm.connections.pooling: ERROR
